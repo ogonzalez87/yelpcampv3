@@ -39,6 +39,11 @@ app.get("/campgrounds/new", function(req, res){
    res.render("new.ejs"); 
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("The YelpCamp Server Has Started!");
-});
+//For C9 Use This!!!!
+// app.listen(process.env.PORT, process.env.IP, function(){
+//    console.log("The YelpCamp Server Has Started!");
+// });
+
+app.listen(3000 , function(){
+    console.log("The YelpCamp Server Has Started!");
+ });
