@@ -35,7 +35,7 @@ function seedDB() {
                         Comment.create({
                             text:"This place is greate, but I wish there was internet",
                             author: "Hommer"
-                        }function (err,comment) {
+                        }, function (err,comment) {
                             if (err) {
                                 console.log(err);
                             } else {
@@ -43,8 +43,7 @@ function seedDB() {
                                 campground.save();
                                 console.log("Created new comment");
                                 
-                            }
-                            // body...
+                            } 
                         });
                     }
                 });
